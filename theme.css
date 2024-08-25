@@ -1,17 +1,75 @@
-body {
-    --radius-s: 0px;
-    --radius-m: 0px;
-    --radius-l: 0px;
-    --input-radius: 0px;
-    --tab-radius-active: 0px;
-    --checkbox-radius: 0px;
-    --toggle-radius: 0px;
-    --toggle-thumb-radius: 0px;
-    --slider-thumb-radius: 0px;
+* {
+    --size-16-16: 256px;
+    --size-16-8: 128px;
+    --accent-plus-60: calc(var(--accent-h) + 60);
+    --accent-plus-120: calc(var(--accent-h) + 120);
+    --accent-minus-60: calc(var(--accent-h) - 60);
+    --accent-minus-120: calc(var(--accent-h) - 120);
+    --text-selection: hsla(var(--accent-minus-60), 50%, 50%, 0.2);
+    --text-highlight-bg: hsla(var(--accent-plus-60), 70%, 50%, 0.4);
+    /* --dropdown-background: var(--interactive-normal);
+    --dropdown-background-hover: var(--interactive-hover); */
 }
+
+.theme-dark {
+    --background-primary: hsl(var(--accent-h), 35%, 25%);
+    --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
+    --background-secondary: hsl(var(--accent-h), 35%, 30%);
+    --background-secondary-alt: hsl(var(--accent-h), 35%, 32%);
+    --text-normal: hsl(0, 0%, 85%);
+    --text-muted: hsl(var(--accent-h), 15%, 65%);
+    --text-faint: hsl(var(--accent-h), 20%, 40%);
+    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
+    --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
+}
+
+.theme-light {
+    --background-primary: hsl(var(--accent-h), 35%, 75%);
+    --background-primary-alt: hsl(var(--accent-h), 35%, 80%);
+    --background-secondary: hsl(var(--accent-h), 35%, 65%);
+    --background-secondary-alt: hsl(var(--accent-h), 35%, 70%);
+    --text-normal: hsl(0, 0%, 13%);
+    --text-muted: hsl(var(--accent-h), 15%, 40%);
+    --text-faint: hsl(var(--accent-h), 20%, 52%);
+    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 68%);
+    --interactive-hover: hsl(var(--accent-plus-60), 20%, 65%); */
+}
+
+body {
+    --radius-s: 20px;
+    --radius-m: 20px;
+    --radius-l: 20px;
+    --radius-xl: 20px;
+    --input-radius: 20px;
+    --tab-radius-active: 20px;
+    --checkbox-radius: 20px;
+    --toggle-radius: 20px;
+    --toggle-thumb-radius: 20px;
+    --slider-thumb-radius: 20px;
+}
+
+/* option.theme-light {
+    color: var(--text-on-accent-inverted);
+} */
 
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
+    display: none;
+}
+
+.workspace-tab-header {
+    margin-bottom: var(--size-4-2);
+    --tab-width: var(--size-16-8);
+    /* padding: var(--size-4-2); */
+}
+
+.workspace-tab-header-inner {
+    height: 100%;
+    /* padding-bottom: var(--size-4-2); */
+}
+
+.workspace-tab-header-inner::after {
+    /* margin-left: var(--size-4-2) */
     display: none;
 }
 
