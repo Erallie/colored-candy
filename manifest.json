@@ -1,7 +1,6 @@
 {
-	"name": "Sample Theme",
-	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md"
+    "name": "Cutesy theme",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "author": "Erika Gozar"
 }

@@ -1,34 +1,54 @@
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --input-radius: 0px;
+    --tab-radius-active: 0px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+    display: none;
 }
 
 svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    rx: 0;
+    ry: 0;
 }
 
 .menu {
-	padding: var(--size-2-1);
+    padding: var(--size-2-1);
 }
 
 .menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+    padding: var(--size-4-1) var(--size-4-2);
 }
 
 .menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+    margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+
+.callout[data-callout="button"] {
+    --callout-color: 143, 69, 255;
+    /* 116, 38, 235; */
+    --callout-icon: lucide-shell;
+}
+
+.callout[data-callout="button"] a {
+    font-weight: 500;
+    color: rgb(143, 69, 255);
+    text-decoration: none;
+}
+
+
+.callout[data-callout="instructions"] {
+    --callout-color: 242, 198, 78;
+    --callout-icon: lucide-graduation-cap;
 }
