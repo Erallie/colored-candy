@@ -273,12 +273,12 @@ mark,
     display: none;
 }
 
-svg * {
+/* svg * {
     stroke-linecap: round;
     stroke-linejoin: round;
     rx: 5;
     ry: 5;
-}
+} */
 
 .menu {
     padding: var(--size-2-1);
