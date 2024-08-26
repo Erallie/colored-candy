@@ -8,6 +8,7 @@
     --accent-minus-60: calc(var(--accent-h) - 60);
     --accent-minus-120: calc(var(--accent-h) - 120);
     --accent-s-pastel: min(var(--accent-s), 50%);
+    /* --accent-s-saturated: max(var(--accent-s), 50%); */
     /* #endregion */
     /* --dropdown-background: var(--interactive-normal);
     --dropdown-background-hover: var(--interactive-hover); */
@@ -60,7 +61,7 @@
     --checkbox-color: var(--interactive-accent);
     --checkbox-color-hover: var(--interactive-accent-hover);
 
-    --text-selection: hsla(var(--accent-minus-60), 50%, 50%, 0.3);
+    --text-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
     --text-highlight-bg: hsla(var(--accent-plus-60), var(--accent-s-pastel), var(--accent-l-closer), 0.6);
     /* #endregion */
 
