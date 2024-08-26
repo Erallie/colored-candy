@@ -274,10 +274,10 @@ mark,
 }
 
 svg * {
-    stroke-linecap: square;
-    stroke-linejoin: miter;
-    rx: 0;
-    ry: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    rx: 5;
+    ry: 5;
 }
 
 .menu {
