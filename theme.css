@@ -158,6 +158,7 @@ input[type=checkbox]:checked:after {
     box-shadow: none;
 }
 
+/* #region highlight */
 mark,
 .search-result-file-matched-text,
 .cm-s-obsidian span.cm-highlight {
@@ -165,7 +166,34 @@ mark,
     padding: var(--size-1-1) var(--size-2-3);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    /* -break */
 }
+
+.cm-s-obsidian span.cm-highlight.cm-formatting,
+.cm-s-obsidian span.cm-highlight.cm-formatting+span.cm-highlight:not(.cm-formatting) {
+    padding-top: var(--size-1-1);
+    padding-bottom: var(--size-1-1);
+    border-radius: 0;
+}
+
+.cm-s-obsidian span.cm-highlight:not(.cm-formatting)+span.cm-highlight.cm-formatting {
+    padding-right: var(--size-2-3);
+    border-top-right-radius: var(--size-4-5);
+    border-bottom-right-radius: var(--size-4-5);
+}
+
+.cm-s-obsidian span.cm-highlight.cm-formatting:has(+span.cm-highlight:not(.cm-formatting)) {
+    padding-left: var(--size-2-3);
+    border-top-left-radius: var(--size-4-5);
+    border-bottom-left-radius: var(--size-4-5);
+}
+
+.cm-s-obsidian span.cm-highlight.cm-formatting+span.cm-highlight:not(.cm-formatting) {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* #endregion */
 
 /* ::selection {
     border-radius: var(--size-4-5);
