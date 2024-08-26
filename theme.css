@@ -200,11 +200,37 @@ mark,
     padding: 1px var(--size-2-3);
 } */
 
-
+/* #region inline-code */
 .markdown-rendered code,
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
     padding: var(--size-2-2) var(--size-2-3);
 }
+
+.cm-s-obsidian .cm-inline-code.cm-formatting,
+.cm-s-obsidian .cm-inline-code.cm-formatting+.cm-inline-code:not(.cm-formatting) {
+    padding-top: var(--size-2-2);
+    padding-bottom: var(--size-2-2);
+}
+
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting)+.cm-inline-code.cm-formatting {
+    padding-right: var(--size-2-3);
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting:has(+.cm-inline-code:not(.cm-formatting)) {
+    padding-left: var(--size-2-3);
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting+.cm-inline-code:not(.cm-formatting) {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting~.cm-inline-code:not(.cm-formatting) {
+    padding-top: var(--size-2-2);
+    padding-bottom: var(--size-2-2);
+}
+
+/* #endregion */
 
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
