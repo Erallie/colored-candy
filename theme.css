@@ -188,12 +188,14 @@ mark,
 
 .cm-s-obsidian span.cm-highlight:not(.cm-formatting)+span.cm-highlight.cm-formatting {
     padding-right: var(--size-2-3);
+    padding-left: 0;
     border-top-right-radius: var(--size-4-5);
     border-bottom-right-radius: var(--size-4-5);
 }
 
 .cm-s-obsidian span.cm-highlight.cm-formatting:has(+span.cm-highlight:not(.cm-formatting)) {
     padding-left: var(--size-2-3);
+    padding-right: 0;
     border-top-left-radius: var(--size-4-5);
     border-bottom-left-radius: var(--size-4-5);
 }
