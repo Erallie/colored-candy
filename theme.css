@@ -1,15 +1,14 @@
 * {
     /* #region global variables */
+    --size-1-1: 1px;
     --size-16-16: 256px;
     --size-16-8: 128px;
     --accent-plus-60: calc(var(--accent-h) + 60);
     --accent-plus-120: calc(var(--accent-h) + 120);
     --accent-minus-60: calc(var(--accent-h) - 60);
     --accent-minus-120: calc(var(--accent-h) - 120);
+    --accent-s-pastel: min(var(--accent-s), 50%);
     /* #endregion */
-
-    --text-selection: hsla(var(--accent-minus-60), 50%, 50%, 0.2);
-    --text-highlight-bg: hsla(var(--accent-plus-60), 70%, 50%, 0.4);
     /* --dropdown-background: var(--interactive-normal);
     --dropdown-background-hover: var(--interactive-hover); */
 
@@ -51,14 +50,20 @@
 
     /* #endregion */
 
-    --tag-background: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable), 0.1);
-    --tag-background-hover: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable), 0.2);
+    /* #region accents */
+    --interactive-accent: hsl(var(--accent-plus-60), var(--accent-s-pastel), var(--accent-l-closer));
+    --interactive-accent-hover: hsl(calc(var(--accent-plus-60) - 3), calc(var(--accent-s-pastel) * 1.02), calc(var(--accent-l-closer) * 1.15));
 
-    --interactive-accent: hsl(var(--accent-plus-60), var(--accent-s), var(--accent-l));
-    --interactive-accent-hover: hsl(calc(var(--accent-plus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+    --tag-background: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
+    --tag-background-hover: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.35);
 
     --checkbox-color: var(--interactive-accent);
     --checkbox-color-hover: var(--interactive-accent-hover);
+
+    --text-selection: hsla(var(--accent-minus-60), 50%, 50%, 0.3);
+    --text-highlight-bg: hsla(var(--accent-plus-60), var(--accent-s-pastel), var(--accent-l-closer), 0.6);
+    /* #endregion */
+
     /* --background-modifier-hover:  */
 
     /* #region line height */
@@ -68,6 +73,11 @@
 }
 
 .theme-dark {
+    /* #region global variables */
+    --accent-l-readable: max(var(--accent-l), 50%);
+    --accent-l-closer: min(var(--accent-l), 40%);
+    /* #endregion */
+
     /* #region background */
     --background-primary: hsl(var(--accent-h), 35%, 25%);
     --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
@@ -76,11 +86,10 @@
     /* #endregion */
 
     /* #region text colors */
-    --accent-l-readable: max(var(--accent-l), 50%);
-
     --text-normal: hsl(0, 0%, 85%);
     --text-muted: hsl(var(--accent-h), 15%, 65%);
     --text-faint: hsl(var(--accent-h), 20%, 40%);
+    /* --text-on-accent: var(--text-on-accent-inverted); */
     --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
     --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l-readable) * 1.29));
     /* #endregion */
@@ -91,6 +100,11 @@
 }
 
 .theme-light {
+    /* #region global variables */
+    --accent-l-readable: min(var(--accent-l), 35%);
+    --accent-l-closer: max(var(--accent-l), 60%);
+    /* #endregion */
+
     /* #region background */
     --background-primary: hsl(var(--accent-h), 35%, 75%);
     --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
@@ -99,11 +113,10 @@
     /* #endregion */
 
     /* #region text colors */
-    --accent-l-readable: min(var(--accent-l), 35%);
-
     --text-normal: hsl(0, 0%, 13%);
     --text-muted: hsl(var(--accent-h), 15%, 40%);
     --text-faint: hsl(var(--accent-h), 20%, 52%);
+    /* --text-on-accent: var(--text-on-accent-inverted); */
     --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
     --text-accent-hover: hsl(calc(var(--accent-minus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l-readable) * 1.15));
     /* #endregion */
@@ -116,17 +129,17 @@
 }
 
 body {
-    --radius-s: 20px;
-    --radius-m: 20px;
-    --radius-l: 20px;
-    --radius-xl: 20px;
-    --input-radius: 20px;
-    --tab-radius-active: 20px;
-    --checkbox-radius: 20px;
+    --radius-s: var(--size-4-5);
+    --radius-m: var(--size-4-5);
+    --radius-l: var(--size-4-5);
+    --radius-xl: var(--size-4-5);
+    --input-radius: var(--size-4-5);
+    --tab-radius-active: var(--size-4-5);
+    --checkbox-radius: var(--size-4-5);
     --checkbox-size: var(--size-4-5);
-    --toggle-radius: 20px;
-    --toggle-thumb-radius: 20px;
-    --slider-thumb-radius: 20px;
+    --toggle-radius: var(--size-4-5);
+    --toggle-thumb-radius: var(--size-4-5);
+    --slider-thumb-radius: var(--size-4-5);
 }
 
 input[type=checkbox]:checked:after {
@@ -137,27 +150,32 @@ input[type=checkbox]:checked:after {
     top: 0.34em;
 }
 
-/* .dropdown,
-button {
-    border-style: solid;
-    border-width: var(--border-width);
-    border-color: var(--hr-color);
-} */
-
-/* option.theme-light {
-    color: var(--text-on-accent-inverted);
-} */
-
 .checkbox-container {
     box-shadow: none;
 }
 
-/* select.dropdown {
-    box-shadow: none;
-} */
-
 .checkbox-container:after {
     box-shadow: none;
+}
+
+mark,
+.search-result-file-matched-text,
+.cm-s-obsidian span.cm-highlight {
+    border-radius: var(--size-4-5);
+    padding: var(--size-1-1) var(--size-2-3);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+/* ::selection {
+    border-radius: var(--size-4-5);
+    padding: 1px var(--size-2-3);
+} */
+
+
+.markdown-rendered code,
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+    padding: var(--size-2-2) var(--size-2-3);
 }
 
 .workspace-tab-header.is-active::before,
@@ -200,10 +218,12 @@ svg * {
     margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
+.callout {
+    background-color: rgba(var(--callout-color), 0.125);
+}
 
-.callout[data-callout="button"] {
+/* .callout[data-callout="button"] {
     --callout-color: 143, 69, 255;
-    /* 116, 38, 235; */
     --callout-icon: lucide-shell;
 }
 
@@ -217,4 +237,4 @@ svg * {
 .callout[data-callout="instructions"] {
     --callout-color: 242, 198, 78;
     --callout-icon: lucide-graduation-cap;
-}
+} */
