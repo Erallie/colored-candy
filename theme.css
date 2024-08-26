@@ -180,7 +180,8 @@ mark,
 }
 
 .cm-s-obsidian span.cm-highlight.cm-formatting,
-.cm-s-obsidian span.cm-highlight.cm-formatting+span.cm-highlight:not(.cm-formatting) {
+.cm-s-obsidian span.cm-highlight.cm-formatting+span.cm-highlight:not(.cm-formatting),
+.cm-s-obsidian span.cm-highlight:not(.cm-formatting)+span.cm-highlight {
     padding-top: var(--size-1-1);
     padding-bottom: var(--size-1-1);
     border-radius: 0;
@@ -200,10 +201,16 @@ mark,
     border-bottom-left-radius: var(--size-4-5);
 }
 
-.cm-s-obsidian span.cm-highlight.cm-formatting+span.cm-highlight:not(.cm-formatting) {
+.cm-s-obsidian span.cm-highlight:not(.cm-formatting)+span.cm-highlight,
+.cm-s-obsidian span.cm-highlight+span.cm-highlight:not(.cm-formatting) {
     padding-left: 0;
     padding-right: 0;
 }
+
+/* .cm-s-obsidian span.cm-highlight.cm-formatting+span.cm-highlight:not(.cm-formatting) {
+    padding-left: 0;
+    padding-right: 0;
+} */
 
 /* #endregion */
 
