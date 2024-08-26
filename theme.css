@@ -158,6 +158,10 @@ input[type=checkbox]:checked:after {
     box-shadow: none;
 }
 
+/* del {
+    text-underline-offset: 20px;
+} */
+
 /* #region highlight */
 mark,
 .search-result-file-matched-text,
