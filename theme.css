@@ -9,6 +9,23 @@
     --text-highlight-bg: hsla(var(--accent-plus-60), 70%, 50%, 0.4);
     /* --dropdown-background: var(--interactive-normal);
     --dropdown-background-hover: var(--interactive-hover); */
+    --swatch-shadow: none;
+    --tab-stacked-shadow: none;
+    /* --line-height-normal:  */
+    /* --embed-block-shadow-hover */
+    --background-modifier-border: var(--hr-color);
+    --divider-color: var(--hr-color);
+    --status-bar-border-color: var(--divider-color);
+    --titlebar-border-color: var(--divider-color);
+
+    --input-shadow: none;
+    --input-shadow-hover: none;
+
+    --pdf-shadow: none;
+    --pdf-thumbnail-shadow: none;
+
+    /* --interactive-accent: */
+    /* --background-modifier-hover:  */
 }
 
 .theme-dark {
@@ -21,18 +38,25 @@
     --text-faint: hsl(var(--accent-h), 20%, 40%);
     /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
     --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
+    --hr-color: hsl(var(--accent-h), 25%, 20%);
+    --text-accent: hsl(var(--accent-minus-60), var(--accent-s), max(var(--accent-l), 40%));
+    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29));
 }
 
 .theme-light {
     --background-primary: hsl(var(--accent-h), 35%, 75%);
-    --background-primary-alt: hsl(var(--accent-h), 35%, 80%);
+    --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
     --background-secondary: hsl(var(--accent-h), 35%, 65%);
-    --background-secondary-alt: hsl(var(--accent-h), 35%, 70%);
+    --background-secondary-alt: hsl(var(--accent-h), 35%, 60%);
     --text-normal: hsl(0, 0%, 13%);
     --text-muted: hsl(var(--accent-h), 15%, 40%);
     --text-faint: hsl(var(--accent-h), 20%, 52%);
     /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 68%);
     --interactive-hover: hsl(var(--accent-plus-60), 20%, 65%); */
+    --hr-color: hsl(var(--accent-h), 25%, 90%);
+    --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l));
+    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+
 }
 
 body {
@@ -47,6 +71,13 @@ body {
     --toggle-thumb-radius: 20px;
     --slider-thumb-radius: 20px;
 }
+
+/* .dropdown,
+button {
+    border-style: solid;
+    border-width: var(--border-width);
+    border-color: var(--hr-color);
+} */
 
 /* option.theme-light {
     color: var(--text-on-accent-inverted);
