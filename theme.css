@@ -36,7 +36,9 @@
     --nav-item-border-color: var(--divider-color);
     /* --nav-item-border-color-hover:  */
     --titlebar-border-color: var(--divider-color);
-    --table-border-color: var(--divider-color);
+    --table-border-color: var(--text-muted);
+    --table-header-border-color: var(--text-muted);
+    /* --table-add-button-color: var(--text-faint); */
     /* --blockquote-border-color */
     /* --file-header-border: */
     /* --slider-thumb-border-color: */
@@ -63,6 +65,9 @@
 
     --text-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
     --text-highlight-bg: hsla(var(--accent-plus-60), var(--accent-s-pastel), var(--accent-l-closer), 0.6);
+
+    --table-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.2);
+    --table-selection-border-color: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
     /* #endregion */
 
     /* --background-modifier-hover:  */
