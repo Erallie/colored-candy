@@ -1,61 +1,117 @@
 * {
+    /* #region global variables */
     --size-16-16: 256px;
     --size-16-8: 128px;
     --accent-plus-60: calc(var(--accent-h) + 60);
     --accent-plus-120: calc(var(--accent-h) + 120);
     --accent-minus-60: calc(var(--accent-h) - 60);
     --accent-minus-120: calc(var(--accent-h) - 120);
+    /* #endregion */
+
     --text-selection: hsla(var(--accent-minus-60), 50%, 50%, 0.2);
     --text-highlight-bg: hsla(var(--accent-plus-60), 70%, 50%, 0.4);
     /* --dropdown-background: var(--interactive-normal);
     --dropdown-background-hover: var(--interactive-hover); */
+
+    /* #region shadows */
     --swatch-shadow: none;
     --tab-stacked-shadow: none;
-    /* --line-height-normal:  */
-    /* --embed-block-shadow-hover */
-    --background-modifier-border: var(--hr-color);
-    --divider-color: var(--hr-color);
-    --status-bar-border-color: var(--divider-color);
-    --titlebar-border-color: var(--divider-color);
-
     --input-shadow: none;
     --input-shadow-hover: none;
 
     --pdf-shadow: none;
     --pdf-thumbnail-shadow: none;
+    /* --embed-block-shadow-hover */
+    /* --background-modifier-box-shadow: none; */
 
-    /* --interactive-accent: */
+    /* #endregion */
+
+    /* #region borders */
+    --background-modifier-border: var(--hr-color);
+    /* --background-modifier-border-hover:
+    --background-modifier-border-focus: */
+    --divider-color: var(--hr-color);
+    --status-bar-border-color: var(--divider-color);
+    --sidebar-left-border-color: var(--divider-color);
+    --nav-item-border-color: var(--divider-color);
+    /* --nav-item-border-color-hover:  */
+    --titlebar-border-color: var(--divider-color);
+    --table-border-color: var(--divider-color);
+    /* --blockquote-border-color */
+    /* --file-header-border: */
+    /* --slider-thumb-border-color: */
+    /* --prompt-border-color: */
+    /* --nav-indentiation-guide-color: */
+    /* --modal-border-color: */
+    /* --indentation-guide-color */
+    /* --checkbox-border-color
+    --checkbox-border-color-hover */
+    /* --input-focus-border-color */
+    /* --metadata-border-color: var(--hr-color); */
+
+    /* #endregion */
+
+    --tag-background: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable), 0.1);
+    --tag-background-hover: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable), 0.2);
+
+    --interactive-accent: hsl(var(--accent-plus-60), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: hsl(calc(var(--accent-plus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+
+    --checkbox-color: var(--interactive-accent);
+    --checkbox-color-hover: var(--interactive-accent-hover);
     /* --background-modifier-hover:  */
+
+    /* #region line height */
+    --line-height-normal: 1.75em;
+    --line-height-tight: 1.5em;
+    /* #endregion */
 }
 
 .theme-dark {
+    /* #region background */
     --background-primary: hsl(var(--accent-h), 35%, 25%);
     --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
     --background-secondary: hsl(var(--accent-h), 35%, 30%);
     --background-secondary-alt: hsl(var(--accent-h), 35%, 32%);
+    /* #endregion */
+
+    /* #region text colors */
+    --accent-l-readable: max(var(--accent-l), 50%);
+
     --text-normal: hsl(0, 0%, 85%);
     --text-muted: hsl(var(--accent-h), 15%, 65%);
     --text-faint: hsl(var(--accent-h), 20%, 40%);
+    --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
+    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l-readable) * 1.29));
+    /* #endregion */
+
     /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
     --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
     --hr-color: hsl(var(--accent-h), 25%, 20%);
-    --text-accent: hsl(var(--accent-minus-60), var(--accent-s), max(var(--accent-l), 40%));
-    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29));
 }
 
 .theme-light {
+    /* #region background */
     --background-primary: hsl(var(--accent-h), 35%, 75%);
     --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
     --background-secondary: hsl(var(--accent-h), 35%, 65%);
     --background-secondary-alt: hsl(var(--accent-h), 35%, 60%);
+    /* #endregion */
+
+    /* #region text colors */
+    --accent-l-readable: min(var(--accent-l), 35%);
+
     --text-normal: hsl(0, 0%, 13%);
     --text-muted: hsl(var(--accent-h), 15%, 40%);
     --text-faint: hsl(var(--accent-h), 20%, 52%);
+    --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
+    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l-readable) * 1.15));
+    /* #endregion */
+
     /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 68%);
     --interactive-hover: hsl(var(--accent-plus-60), 20%, 65%); */
     --hr-color: hsl(var(--accent-h), 25%, 90%);
-    --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l));
-    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+    /* --background-modifier-cover: black; */
 
 }
 
@@ -67,9 +123,18 @@ body {
     --input-radius: 20px;
     --tab-radius-active: 20px;
     --checkbox-radius: 20px;
+    --checkbox-size: var(--size-4-5);
     --toggle-radius: 20px;
     --toggle-thumb-radius: 20px;
     --slider-thumb-radius: 20px;
+}
+
+input[type=checkbox]:checked:after {
+    position: static;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+    top: 0.34em;
 }
 
 /* .dropdown,
@@ -82,6 +147,18 @@ button {
 /* option.theme-light {
     color: var(--text-on-accent-inverted);
 } */
+
+.checkbox-container {
+    box-shadow: none;
+}
+
+/* select.dropdown {
+    box-shadow: none;
+} */
+
+.checkbox-container:after {
+    box-shadow: none;
+}
 
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
