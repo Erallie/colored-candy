@@ -9,6 +9,7 @@ The following issues are already known and will be worked on in time:
 - When a wiki-link is highlighted, the rounded corners repeat.
 - Things look weird when a tag is highlighted.
 # Previews
+I haven't yet combined all my screenshots into a single image, so for now, here's everything:
 ![purple-light-preview](./Attachments/purple-light-preview.png)
 
 ![purple-dark-preview](./Attachments/purple-dark-preview.png)
