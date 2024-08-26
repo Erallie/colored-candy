@@ -217,7 +217,7 @@ mark,
 }
 
 .cm-s-obsidian .cm-inline-code.cm-formatting,
-.cm-s-obsidian .cm-inline-code.cm-formatting+.cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian .cm-inline-code.cm-formatting~.cm-inline-code:not(.cm-formatting) {
     padding-top: var(--size-2-2);
     padding-bottom: var(--size-2-2);
 }
@@ -235,10 +235,10 @@ mark,
     padding-right: 0;
 }
 
-.cm-s-obsidian .cm-inline-code.cm-formatting~.cm-inline-code:not(.cm-formatting) {
+/* .cm-s-obsidian .cm-inline-code.cm-formatting~.cm-inline-code:not(.cm-formatting) {
     padding-top: var(--size-2-2);
     padding-bottom: var(--size-2-2);
-}
+} */
 
 /* #endregion */
 
