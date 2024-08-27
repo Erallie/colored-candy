@@ -12,14 +12,14 @@ The following issues are already known and will be worked on in time:
 # Previews
 I haven't yet combined all my screenshots into a single image, so for now, here are the individual screenshots I took:
 
-![purple-light-preview.png](purple-light-preview.png)
+![purple-light-preview.png](./Attachments/purple-light-preview.png)
 
-![purple-dark-preview.png](purple-dark-preview.png)
+![purple-dark-preview.png](./Attachments/purple-dark-preview.png)
 
-![green-light-preview.png](green-light-preview.png)
+![green-light-preview.png](./Attachments/green-light-preview.png)
 
-![green-dark-preview.png](green-dark-preview.png)
+![green-dark-preview.png](./Attachments/green-dark-preview.png)
 
-![red-light-preview.png](red-light-preview.png)
+![red-light-preview.png](./Attachments/red-light-preview.png)
 
-![red-dark-preview.png](red-dark-preview.png)
+![red-dark-preview.png](./Attachments/red-dark-preview.png)
