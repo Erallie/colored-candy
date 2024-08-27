@@ -101,8 +101,8 @@
 
     /* #region text colors */
     --text-normal: hsl(0, 0%, 85%);
-    --text-muted: hsl(var(--accent-h), 15%, 65%);
-    --text-faint: hsl(var(--accent-h), 20%, 48%);
+    --text-muted: hsl(var(--accent-h), 15%, 68%);
+    --text-faint: hsl(var(--accent-h), 20%, 51%);
     /* --text-on-accent: var(--text-on-accent-inverted); */
     /* --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable)); */
     --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l-readable) * 1.29));
