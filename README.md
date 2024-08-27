@@ -1,5 +1,6 @@
 # Colored Candy
 ![Colored Candy Preview](Attachments/colored-candy-combined-preview-2.png)
+
 This is a cute lil' theme for [Obsidian](https://obsidian.md/) that changes the interface colors based off of your chosen accent color.
 
 You can choose your accent color in [Obsidian](https://obsidian.md/) under **Settings → Appearance → Accent color**.
