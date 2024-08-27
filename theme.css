@@ -297,8 +297,8 @@ code,
 
 /* #endregion */
 
-.workspace-tab-header.is-active::before,
-.workspace-tab-header.is-active::after {
+.workspace-tab-header.is-active:before,
+.workspace-tab-header.is-active:after {
     display: none;
 }
 
