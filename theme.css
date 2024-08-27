@@ -1,8 +1,8 @@
 * {
     /* #region global variables */
-    --size-1-1: 1px;
-    --size-16-16: 256px;
-    --size-16-8: 128px;
+    --size-1-1: calc(var(--size-2-1) / 2);
+    --size-16-16: calc(var(--size-4-4) * 16);
+    --size-16-8: calc(var(--size-4-4) * 8);
     --accent-plus-60: calc(var(--accent-h) + 60);
     --accent-plus-120: calc(var(--accent-h) + 120);
     --accent-minus-60: calc(var(--accent-h) - 60);
