@@ -31,6 +31,7 @@
     /* --background-modifier-border-hover:
     --background-modifier-border-focus: */
     --divider-color: var(--hr-color);
+    --divider-color-hover: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
     --status-bar-border-color: var(--divider-color);
     --sidebar-left-border-color: var(--divider-color);
     --nav-item-border-color: var(--divider-color);
