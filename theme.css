@@ -1,6 +1,8 @@
 * {
     /* #region global variables */
-    --size-1-1: calc(var(--size-2-1) / 2);
+    --size-1-2: var(--size-2-1);
+    --size-1-1: calc(var(--size-1-2) / 2);
+    --size-1-3: calc(var(--size-1-1) * 3);
     --size-16-16: calc(var(--size-4-4) * 16);
     --size-16-8: calc(var(--size-4-4) * 8);
     --accent-plus-60: calc(var(--accent-h) + 60);
@@ -191,21 +193,29 @@ mark,
     border-radius: 0;
 } */
 
+.markdown-rendered mark .internal-link {
+    color: var(--link-color);
+}
+
 .cm-s-obsidian span.cm-highlight.cm-hashtag {
-    padding-top: var(--size-2-1);
-    padding-bottom: var(--size-2-1);
+    padding-top: var(--size-1-2);
+    padding-bottom: var(--size-1-2);
+    position: relative;
+    bottom: var(--size-1-1);
+}
+
+.cm-s-obsidian :not(.cm-formatting-hashtag)+span.cm-highlight.cm-hashtag:not(.cm-formatting-hashtag)::before {
+    content: '#';
 }
 
 .cm-s-obsidian span.cm-highlight:not(.cm-formatting)+span.cm-highlight.cm-formatting:not(:has(+span.cm-highlight)) {
     padding-right: var(--size-2-3);
-    /* padding-left: 0; */
     border-top-right-radius: var(--size-4-5);
     border-bottom-right-radius: var(--size-4-5);
 }
 
 .cm-s-obsidian :not(span.cm-highlight)+span.cm-highlight.cm-formatting:has(+span.cm-highlight:not(.cm-formatting)) {
     padding-left: var(--size-2-3);
-    /* padding-right: 0; */
     border-top-left-radius: var(--size-4-5);
     border-bottom-left-radius: var(--size-4-5);
 }
