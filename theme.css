@@ -40,12 +40,12 @@
     --table-header-border-color: var(--text-muted);
     --table-add-button-border-color: var(--text-muted);
     /* --table-add-button-color: var(--text-faint); */
-    /* --blockquote-border-color */
-    /* --file-header-border: */
+    --blockquote-border-color: var(--interactive-accent);
+    /* --file-header-border: var(--divider-color); */
     /* --slider-thumb-border-color: */
     /* --prompt-border-color: */
     /* --nav-indentiation-guide-color: */
-    /* --modal-border-color: */
+    --modal-border-color: var(--divider-color);
     /* --indentation-guide-color */
     /* --checkbox-border-color
     --checkbox-border-color-hover */
