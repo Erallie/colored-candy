@@ -151,9 +151,8 @@ body {
 }
 
 input[type=checkbox]:checked:after {
-    position: absolute;
-    /* left: 1%;
-    top: 1%; */
+    position: static;
+    padding: auto;
 }
 
 .markdown-preview-view .task-list-item-checkbox {
