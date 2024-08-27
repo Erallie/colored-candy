@@ -1,3 +1,17 @@
+* {
+
+    /* #region shadows */
+    --swatch-shadow: none;
+    --tab-stacked-shadow: none;
+    --input-shadow: none;
+    --input-shadow-hover: none;
+
+    --pdf-shadow: none;
+    --pdf-thumbnail-shadow: none;
+    /* --embed-block-shadow-hover */
+    /* --background-modifier-box-shadow: none; */
+}
+
 .theme-dark {
     /* #region global variables */
     --accent-l-readable: max(var(--accent-l), 50%);
