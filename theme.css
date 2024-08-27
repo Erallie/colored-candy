@@ -72,6 +72,8 @@
     --table-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.2);
     --table-selection-border-color: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
 
+    --nav-item-background-selected: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.17);
+
     /* --blockquote-border-color: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable)); */
     --blockquote-border-color: var(--interactive-accent);
     /* #endregion */
