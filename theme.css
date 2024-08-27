@@ -111,7 +111,8 @@
 
     /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
     --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
-    --hr-color: hsl(var(--accent-h), 25%, 20%);
+    --hr-color: hsl(var(--accent-h), 25%, 15%);
+    /* --hr-color: hsl(var(--accent-h), 15%, 50%); */
 }
 
 .theme-light {
