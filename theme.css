@@ -161,12 +161,13 @@ body {
     --slider-thumb-radius: var(--size-4-5);
     /* #endregion */
 
+    /* #region size variables */
     --size-1-2: var(--size-2-1);
     --size-1-1: calc(var(--size-1-2) / 2);
     --size-1-3: calc(var(--size-1-1) * 3);
     --size-16-16: calc(var(--size-4-4) * 16);
     --size-16-8: calc(var(--size-4-4) * 8);
-
+    /* #endregion */
 
     /* #region line height */
     --line-height-normal: 1.75em;
