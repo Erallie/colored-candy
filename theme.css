@@ -154,6 +154,8 @@ body {
     --slider-thumb-radius: var(--size-4-5);
 }
 
+
+/* #region checkboxes */
 input[type=checkbox]:checked:after {
     position: static;
     padding: auto;
@@ -170,6 +172,8 @@ input[type=checkbox]:checked:after {
 .checkbox-container:after {
     box-shadow: none;
 }
+
+/* #endregion */
 
 /* del {
     text-underline-offset: 20px;
@@ -301,8 +305,11 @@ mark,
     /* padding: var(--size-4-2); */
 }
 
-.workspace-tab-header-inner {
+.mod-root .workspace-tab-header-inner {
     height: 100%;
+    padding-top: var(--size-4-3);
+    padding-bottom: var(--size-4-3);
+    /* vertical-align: middle; */
     /* padding-bottom: var(--size-4-2); */
 }
 
@@ -310,6 +317,13 @@ mark,
     /* margin-left: var(--size-4-2) */
     display: none;
 }
+
+/* div.workspace-tab-header-inner-title,
+div.workspace-tab-header-inner-status-container {
+    vertical-align: middle;
+    padding: auto;
+    margin: auto;
+} */
 
 /* svg * {
     stroke-linecap: round;
