@@ -1,95 +1,6 @@
-* {
-
-    /* #region shadows */
-    --swatch-shadow: none;
-    --tab-stacked-shadow: none;
-    --input-shadow: none;
-    --input-shadow-hover: none;
-
-    --pdf-shadow: none;
-    --pdf-thumbnail-shadow: none;
-    /* --embed-block-shadow-hover */
-    /* --background-modifier-box-shadow: none; */
-}
-
-.theme-dark {
-    /* #region global variables */
-    --accent-l-readable: max(var(--accent-l), 50%);
-    --accent-l-closer: min(var(--accent-l), 40%);
-    /* #endregion */
-
-    /* #region background */
-    --background-primary: hsl(var(--accent-h), 35%, 25%);
-    --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
-    --background-secondary: hsl(var(--accent-h), 35%, 30%);
-    --background-secondary-alt: hsl(var(--accent-h), 35%, 32%);
-    /* #endregion */
-
-    /* #region text colors */
-    --text-normal: hsl(0, 0%, 85%);
-    --text-muted: hsl(var(--accent-h), 15%, 65%);
-    --text-faint: hsl(var(--accent-h), 20%, 48%);
-    /* --text-on-accent: var(--text-on-accent-inverted); */
-    /* --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable)); */
-    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l-readable) * 1.29));
-    /* #endregion */
-
-    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
-    --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
-    --hr-color: hsl(var(--accent-h), 25%, 20%);
-}
-
+.theme-dark,
 .theme-light {
     /* #region global variables */
-    --accent-l-readable: min(var(--accent-l), 35%);
-    --accent-l-closer: max(var(--accent-l), 60%);
-    /* #endregion */
-
-    /* #region background */
-    --background-primary: hsl(var(--accent-h), 35%, 75%);
-    --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
-    --background-secondary: hsl(var(--accent-h), 35%, 65%);
-    --background-secondary-alt: hsl(var(--accent-h), 35%, 60%);
-    /* #endregion */
-
-    /* #region text colors */
-    --text-normal: hsl(0, 0%, 13%);
-    --text-muted: hsl(var(--accent-h), 15%, 33%);
-    --text-faint: hsl(var(--accent-h), 20%, 47%);
-    /* --text-on-accent: var(--text-on-accent-inverted); */
-    /* --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable)); */
-    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l-readable) * 1.15));
-    /* #endregion */
-
-    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 68%);
-    --interactive-hover: hsl(var(--accent-plus-60), 20%, 65%); */
-    --hr-color: hsl(var(--accent-h), 25%, 90%);
-    /* --background-modifier-cover: black; */
-
-}
-
-body {
-    /* #region radiuses */
-    --radius-s: var(--size-4-5);
-    --radius-m: var(--size-4-5);
-    --radius-l: var(--size-4-5);
-    --radius-xl: var(--size-4-5);
-    --input-radius: var(--size-4-5);
-    --tab-radius-active: var(--size-4-5);
-    --checkbox-radius: var(--size-4-5);
-    --checkbox-size: var(--size-4-5);
-    --toggle-radius: var(--size-4-5);
-    --toggle-thumb-radius: var(--size-4-5);
-    --slider-thumb-radius: var(--size-4-5);
-    /* #endregion */
-
-
-    /* #region global variables */
-    --size-1-2: var(--size-2-1);
-    --size-1-1: calc(var(--size-1-2) / 2);
-    --size-1-3: calc(var(--size-1-1) * 3);
-    --size-16-16: calc(var(--size-4-4) * 16);
-    --size-16-8: calc(var(--size-4-4) * 8);
     --accent-plus-60: calc(var(--accent-h) + 60);
     --accent-plus-120: calc(var(--accent-h) + 120);
     --accent-minus-60: calc(var(--accent-h) - 60);
@@ -98,7 +9,10 @@ body {
     /* --accent-s-saturated: max(var(--accent-s), 50%); */
     /* #endregion */
     /* --dropdown-background: var(--interactive-normal);
-    --dropdown-background-hover: var(--interactive-hover); */
+            --dropdown-background-hover: var(--interactive-hover); */
+    /* --background-modifier-box-shadow: none; */
+
+    /* #endregion */
 
     /* #region shadows */
     --swatch-shadow: none;
@@ -108,15 +22,17 @@ body {
 
     --pdf-shadow: none;
     --pdf-thumbnail-shadow: none;
+
     /* --embed-block-shadow-hover */
     /* --background-modifier-box-shadow: none; */
+    /* #endreiong */
 
-    /* #endregion */
+
 
     /* #region borders */
     --background-modifier-border: var(--hr-color);
     /* --background-modifier-border-hover:
-    --background-modifier-border-focus: */
+        --background-modifier-border-focus: */
     --divider-color: var(--hr-color);
     --divider-color-hover: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
     --status-bar-border-color: var(--divider-color);
@@ -135,7 +51,7 @@ body {
     --modal-border-color: var(--divider-color);
     /* --indentation-guide-color */
     /* --checkbox-border-color
-    --checkbox-border-color-hover */
+        --checkbox-border-color-hover */
     /* --input-focus-border-color */
     /* --metadata-border-color: var(--hr-color); */
 
@@ -165,7 +81,91 @@ body {
     --blockquote-border-color: var(--interactive-accent);
     /* #endregion */
 
+
     /* --background-modifier-hover:  */
+
+}
+
+.theme-dark {
+    /* #region global variables */
+    --accent-l-readable: max(var(--accent-l), 50%);
+    --accent-l-closer: min(var(--accent-l), 40%);
+    /* #endregion */
+
+    /* #region background */
+    --background-primary: hsl(var(--accent-h), 35%, 25%);
+    --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
+    --background-secondary: hsl(var(--accent-h), 35%, 30%);
+    --background-secondary-alt: hsl(var(--accent-h), 35%, 32%);
+    /* #endregion */
+
+    /* #region text colors */
+    --text-normal: hsl(0, 0%, 85%);
+    --text-muted: hsl(var(--accent-h), 15%, 65%);
+    --text-faint: hsl(var(--accent-h), 20%, 48%);
+    /* --text-on-accent: var(--text-on-accent-inverted); */
+    /* --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable)); */
+    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l-readable) * 1.29));
+    /* #endregion */
+
+
+    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
+    --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
+    --hr-color: hsl(var(--accent-h), 25%, 20%);
+}
+
+.theme-light {
+    /* #region global variables */
+    --accent-l-readable: min(var(--accent-l), 35%);
+    --accent-l-closer: max(var(--accent-l), 60%);
+    /* #endregion */
+
+    /* #region background */
+    --background-primary: hsl(var(--accent-h), 35%, 75%);
+    --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
+    --background-secondary: hsl(var(--accent-h), 35%, 65%);
+    --background-secondary-alt: hsl(var(--accent-h), 35%, 60%);
+    /* #endregion */
+
+    /* #region text colors */
+    --text-normal: hsl(0, 0%, 13%);
+    --text-muted: hsl(var(--accent-h), 15%, 33%);
+    --text-faint: hsl(var(--accent-h), 20%, 47%);
+    /* --text-on-accent: var(--text-on-accent-inverted); */
+    /* --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable)); */
+    --text-accent-hover: hsl(calc(var(--accent-minus-60) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l-readable) * 1.15));
+    /* #endregion */
+
+
+    --blockquote-border-color: var(--interactive-accent);
+    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 68%);
+    --interactive-hover: hsl(var(--accent-plus-60), 20%, 65%); */
+    --hr-color: hsl(var(--accent-h), 25%, 90%);
+    /* --background-modifier-cover: black; */
+
+}
+
+body {
+    /* #region radiuses */
+    --radius-s: var(--size-4-5);
+    --radius-m: var(--size-4-5);
+    --radius-l: var(--size-4-5);
+    --radius-xl: var(--size-4-5);
+    --input-radius: var(--size-4-5);
+    --tab-radius-active: var(--size-4-5);
+    --checkbox-radius: var(--size-4-5);
+    --checkbox-size: var(--size-4-5);
+    --toggle-radius: var(--size-4-5);
+    --toggle-thumb-radius: var(--size-4-5);
+    --slider-thumb-radius: var(--size-4-5);
+    /* #endregion */
+
+    --size-1-2: var(--size-2-1);
+    --size-1-1: calc(var(--size-1-2) / 2);
+    --size-1-3: calc(var(--size-1-1) * 3);
+    --size-16-16: calc(var(--size-4-4) * 16);
+    --size-16-8: calc(var(--size-4-4) * 8);
+
 
     /* #region line height */
     --line-height-normal: 1.75em;
