@@ -100,7 +100,7 @@
 
     --background-modifier-hover: hsla(var(--accent-h), 30%, 40%, 0.5);
     --background-modifier-form-field: var(--interactive-normal);
-    --background-modifier-border-hover: hsla(var(--accent-h), 25%, 20%);
+    --background-modifier-border-hover: hsla(var(--accent-h), 25%, 18%);
     /* #endregion */
 
     /* #region text colors */
