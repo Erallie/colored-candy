@@ -327,6 +327,7 @@ mark,
 .markdown-rendered code,
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
     padding: var(--size-2-2) var(--size-2-3);
+    overflow: visible;
 }
 
 .cm-s-obsidian .cm-inline-code.cm-formatting,
