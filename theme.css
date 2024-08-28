@@ -1,5 +1,27 @@
+/* @settings
+
+name: Colored Candy
+id: colored-candy-settings
+settings:
+    - 
+        id: bg-l-modifier
+        title: Background lightness modifier
+        description: The background lightness will be incremented or decremented by this amount. In dark mode, this value is inverted.
+        type: variable-number-slider
+        default: 0
+        min: -10
+        max: 10
+        step: 1
+        format: '%'
+
+*/
+
 .theme-dark,
 .theme-light {
+    --bg-l-modifier: 0%;
+    --bg-l-modifier-inverted: calc(var(--bg-l-modifier) * -1);
+
+
     /* #region global variables */
     --accent-plus-60: calc(var(--accent-h) + 60);
     --accent-plus-120: calc(var(--accent-h) + 120);
@@ -93,12 +115,12 @@
     /* #endregion */
 
     /* #region background */
-    --background-primary: hsl(var(--accent-h), 35%, 25%);
-    --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
-    --background-secondary: hsl(var(--accent-h), 35%, 30%);
-    --background-secondary-alt: hsl(var(--accent-h), 35%, 32%);
+    --background-primary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 25%));
+    --background-primary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 27%));
+    --background-secondary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 30%));
+    --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 32%));
 
-    --background-modifier-hover: hsla(var(--accent-h), 30%, 40%, 0.5);
+    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-l-modifier) + 30%), calc(var(--bg-l-modifier-inverted)+ 40%), 0.5);
     --background-modifier-form-field: var(--interactive-normal);
     --background-modifier-border-hover: hsla(var(--accent-h), 25%, 18%);
     /* #endregion */
@@ -113,9 +135,9 @@
     /* #endregion */
 
 
-    --interactive-normal: hsl(var(--accent-h), 25%, 18%);
-    --interactive-hover: hsl(var(--accent-h), 25%, 15%);
-    --hr-color: hsl(var(--accent-h), 25%, 15%);
+    --interactive-normal: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 18%));
+    --interactive-hover: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 15%));
+    --hr-color: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 15%));
     /* --hr-color: hsl(var(--accent-h), 15%, 50%); */
 }
 
@@ -126,14 +148,14 @@
     /* #endregion */
 
     /* #region background */
-    --background-primary: hsl(var(--accent-h), 35%, 75%);
-    --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
-    --background-secondary: hsl(var(--accent-h), 35%, 65%);
-    --background-secondary-alt: hsl(var(--accent-h), 35%, 60%);
+    --background-primary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 75%));
+    --background-primary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 70%));
+    --background-secondary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 65%));
+    --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 60%));
 
-    --background-modifier-hover: hsla(var(--accent-h), 35%, 50%, 0.5);
+    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 50%), 0.5);
     --background-modifier-form-field: var(--interactive-normal);
-    --background-modifier-border-hover: hsla(var(--accent-h), 25%, 85%);
+    --background-modifier-border-hover: hsla(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier) + 85%));
     /* #endregion */
 
     /* #region text colors */
@@ -146,10 +168,9 @@
     /* #endregion */
 
 
-    --blockquote-border-color: var(--interactive-accent);
-    --interactive-normal: hsl(var(--accent-h), 40%, 87%);
-    --interactive-hover: hsl(var(--accent-h), 40%, 90%);
-    --hr-color: hsl(var(--accent-h), 25%, 90%);
+    --interactive-normal: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 40%), calc(var(--bg-l-modifier) + 87%));
+    --interactive-hover: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 40%), calc(var(--bg-l-modifier) + 90%));
+    --hr-color: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier) + 90%));
     /* --background-modifier-cover: black; */
 
 }
