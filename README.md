@@ -13,7 +13,7 @@ If you see anything that looks broken and needs fixing, please create an [issue]
 
 ## Installation
 ### Use BRAT
-Install this plugin using [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([github](https://github.com/TfTHacker/obsidian42-brat)) by doing the following:
+Install this theme using [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([github](https://github.com/TfTHacker/obsidian42-brat)) by doing the following:
 1. Make sure the [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([github](https://github.com/TfTHacker/obsidian42-brat)) plugin is installed in your vault.
 2. Go to **Settings → BRAT → Beta Themes List → Add Beta Theme**
 3. Enter `https://github.com/Erallie/colored-candy` into the input field and select **Add Theme**.
