@@ -20,5 +20,5 @@ Install this theme using [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([git
 ### Manual installation
 To install this theme manually, follow these steps:
 1. Download [`theme.css`](https://github.com/Erallie/colored-candy/blob/master/theme.css)and [`manifest.json`](https://github.com/Erallie/colored-candy/blob/master/manifest.json) from the [master branch](https://github.com/Erallie/colored-candy/tree/master).
-2. Go to your **Themes folder** (`[vault root]/.obsidian/themes`) and create a new subfolder called `Colored Candy`.
+2. Go to your **Themes folder** (`[vault root]/.obsidian/themes`) and create a new subfolder called `Colored Candy` *(case sensitive)*.
 3. Move the downloaded files to the new folder.
