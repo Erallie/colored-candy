@@ -20,6 +20,7 @@ settings:
 .theme-light {
     --bg-l-modifier: 0%;
     --bg-l-modifier-inverted: calc(var(--bg-l-modifier) * -1);
+    --bg-s-modifier: calc(var(--bg-l-modifier) * 0.5);
 
 
     /* #region global variables */
@@ -115,12 +116,12 @@ settings:
     /* #endregion */
 
     /* #region background */
-    --background-primary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 25%));
-    --background-primary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 27%));
-    --background-secondary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 30%));
-    --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 32%));
+    --background-primary: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 25%));
+    --background-primary-alt: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 27%));
+    --background-secondary: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 30%));
+    --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 32%));
 
-    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-l-modifier) + 30%), calc(var(--bg-l-modifier-inverted)+ 40%), 0.5);
+    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-s-modifier) + 30%), calc(var(--bg-l-modifier-inverted)+ 40%), 0.5);
     --background-modifier-form-field: var(--interactive-normal);
     --background-modifier-border-hover: hsla(var(--accent-h), 25%, 18%);
     /* #endregion */
@@ -135,9 +136,9 @@ settings:
     /* #endregion */
 
 
-    --interactive-normal: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 18%));
-    --interactive-hover: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 15%));
-    --hr-color: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 15%));
+    --interactive-normal: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 18%));
+    --interactive-hover: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 15%));
+    --hr-color: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 25%), calc(var(--bg-l-modifier-inverted) + 15%));
     /* --hr-color: hsl(var(--accent-h), 15%, 50%); */
 }
 
@@ -148,14 +149,14 @@ settings:
     /* #endregion */
 
     /* #region background */
-    --background-primary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 75%));
-    --background-primary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 70%));
-    --background-secondary: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 65%));
-    --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 60%));
+    --background-primary: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier) + 75%));
+    --background-primary-alt: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier) + 70%));
+    --background-secondary: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier) + 65%));
+    --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier) + 60%));
 
-    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-l-modifier) + 35%), calc(var(--bg-l-modifier) + 50%), 0.5);
+    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier) + 50%), 0.5);
     --background-modifier-form-field: var(--interactive-normal);
-    --background-modifier-border-hover: hsla(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier) + 85%));
+    --background-modifier-border-hover: hsla(var(--accent-h), calc(var(--bg-s-modifier) + 25%), calc(var(--bg-l-modifier) + 85%));
     /* #endregion */
 
     /* #region text colors */
@@ -168,9 +169,9 @@ settings:
     /* #endregion */
 
 
-    --interactive-normal: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 40%), calc(var(--bg-l-modifier) + 87%));
-    --interactive-hover: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 40%), calc(var(--bg-l-modifier) + 90%));
-    --hr-color: hsl(var(--accent-h), calc(var(--bg-l-modifier) + 25%), calc(var(--bg-l-modifier) + 90%));
+    --interactive-normal: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 40%), calc(var(--bg-l-modifier) + 87%));
+    --interactive-hover: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 40%), calc(var(--bg-l-modifier) + 90%));
+    --hr-color: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 25%), calc(var(--bg-l-modifier) + 90%));
     /* --background-modifier-cover: black; */
 
 }
