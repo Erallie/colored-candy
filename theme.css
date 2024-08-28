@@ -5,8 +5,8 @@ id: colored-candy-settings
 settings:
     - 
         id: bg-l-modifier
-        title: Background lightness modifier
-        description: The background lightness will be incremented or decremented by this amount. In dark mode, this value is inverted.
+        title: Background-to-text contrast
+        description: The background lightness and saturation will be adjusted by this amount to give more contast to the text.
         type: variable-number-slider
         default: 0
         min: -10
