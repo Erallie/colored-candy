@@ -10,7 +10,6 @@ This theme will change the **background colors** according to your accent color'
 If you see anything that looks broken and needs fixing, please create an [issue](https://github.com/Erallie/colored-candy/issues) so that I know to fix it.
 
 > **PLEASE NOTE:** This theme is *intentionally* low-contrast. However, I will try to keep this theme accessibility-friendly as best I can. If anything is too difficult for you to read, create an [issue](https://github.com/Erallie/colored-candy/issues), and I'll see what I can do.
-
 ## Installation
 ### Use BRAT
 Install this theme using [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([github](https://github.com/TfTHacker/obsidian42-brat)) by doing the following:
