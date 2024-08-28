@@ -97,6 +97,10 @@
     --background-primary-alt: hsl(var(--accent-h), 35%, 27%);
     --background-secondary: hsl(var(--accent-h), 35%, 30%);
     --background-secondary-alt: hsl(var(--accent-h), 35%, 32%);
+
+    --background-modifier-hover: hsla(var(--accent-h), 30%, 40%, 0.5);
+    --background-modifier-form-field: var(--interactive-normal);
+    --background-modifier-border-hover: hsla(var(--accent-h), 25%, 20%);
     /* #endregion */
 
     /* #region text colors */
@@ -109,8 +113,8 @@
     /* #endregion */
 
 
-    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 32%);
-    --interactive-hover: hsl(var(--accent-plus-60), 20%, 35%); */
+    --interactive-normal: hsl(var(--accent-h), 25%, 18%);
+    --interactive-hover: hsl(var(--accent-h), 25%, 15%);
     --hr-color: hsl(var(--accent-h), 25%, 15%);
     /* --hr-color: hsl(var(--accent-h), 15%, 50%); */
 }
@@ -126,6 +130,10 @@
     --background-primary-alt: hsl(var(--accent-h), 35%, 70%);
     --background-secondary: hsl(var(--accent-h), 35%, 65%);
     --background-secondary-alt: hsl(var(--accent-h), 35%, 60%);
+
+    --background-modifier-hover: hsla(var(--accent-h), 35%, 50%, 0.5);
+    --background-modifier-form-field: var(--interactive-normal);
+    --background-modifier-border-hover: hsla(var(--accent-h), 25%, 85%);
     /* #endregion */
 
     /* #region text colors */
@@ -139,8 +147,8 @@
 
 
     --blockquote-border-color: var(--interactive-accent);
-    /* --interactive-normal: hsl(var(--accent-plus-60), 20%, 68%);
-    --interactive-hover: hsl(var(--accent-plus-60), 20%, 65%); */
+    --interactive-normal: hsl(var(--accent-h), 40%, 87%);
+    --interactive-hover: hsl(var(--accent-h), 40%, 90%);
     --hr-color: hsl(var(--accent-h), 25%, 90%);
     /* --background-modifier-cover: black; */
 
@@ -174,7 +182,6 @@ body {
     --line-height-tight: 1.5em;
     /* #endregion */
 }
-
 
 /* #region checkboxes */
 input[type=checkbox]:checked:after {
