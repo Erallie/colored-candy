@@ -17,3 +17,8 @@ Install this plugin using [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([gi
 1. Make sure the [BRAT](obsidian://show-plugin?id=obsidian42-brat) ([github](https://github.com/TfTHacker/obsidian42-brat)) plugin is installed in your vault.
 2. Go to **Settings → BRAT → Beta Themes List → Add Beta Theme**
 3. Enter `https://github.com/Erallie/colored-candy` into the input field and select **Add Theme**.
+### Manual installation
+To install this theme manually, follow these steps:
+1. Download [`theme.css`](https://github.com/Erallie/colored-candy/blob/master/theme.css)and [`manifest.json`](https://github.com/Erallie/colored-candy/blob/master/manifest.json) from the [master branch](https://github.com/Erallie/colored-candy/tree/master).
+2. Go to your **Themes folder** (`[vault root]/.obsidian/themes`) and create a new subfolder called `Colored Candy`.
+3. Move the downloaded files to the new folder.
