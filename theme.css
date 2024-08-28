@@ -13,6 +13,17 @@ settings:
         max: 10
         step: 1
         format: '%'
+    - 
+        id: file-line-width
+        title: Readable line length
+        description: The maximum line length when "Readable line length" is enabled.
+        type: variable-number
+        default: 700
+        format: px
+    - 
+        description: "**Readable line length** can be enabled under **Settings → Editor → Readable line length**."
+        type: info-text
+        markdown: true
 
 */
 
