@@ -236,6 +236,11 @@ input[type=checkbox]:checked:after {
 
 /* #endregion */
 
+/* .setting-item-control {
+    box-shadow: none;
+    text-shadow: none;
+} */
+
 /* del {
     text-underline-offset: 20px;
 } */
