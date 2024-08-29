@@ -406,19 +406,25 @@ div.workspace-tab-header-inner-status-container {
 }
 
 .tooltip .tooltip-arrow,
-.tooltip.mod-right .tooltip-arrow {
+.tooltip.mod-right .tooltip-arrow,
+.tooltip.mod-top .tooltip-arrow {
     border-width: 8px;
 }
 
 .tooltip .tooltip-arrow {
     border-bottom-color: var(--tooltip-border);
-    left: calc(50% - 2px);
+    left: calc(50% - 3px);
 }
 
 .tooltip.mod-right .tooltip-arrow {
     border-right-color: var(--tooltip-border);
     top: calc(50% - 8px);
     left: -8px;
+}
+
+.tooltip.mod-top .tooltip-arrow {
+    top: calc(100% - 3px);
+    border-top-color: var(--tooltip-border);
 }
 
 /* #endregion */
