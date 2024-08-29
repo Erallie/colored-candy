@@ -132,7 +132,7 @@ settings:
     --background-secondary: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 30%));
     --background-secondary-alt: hsl(var(--accent-h), calc(var(--bg-s-modifier) + 35%), calc(var(--bg-l-modifier-inverted) + 32%));
 
-    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-s-modifier) + 30%), calc(var(--bg-l-modifier-inverted)+ 40%), 0.5);
+    --background-modifier-hover: hsla(var(--accent-h), calc(var(--bg-s-modifier) + 30%), calc(var(--bg-l-modifier-inverted) + 40%), 0.5);
     --background-modifier-form-field: var(--interactive-normal);
     --background-modifier-border-hover: hsla(var(--accent-h), 25%, 18%);
     /* #endregion */
