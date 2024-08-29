@@ -29,11 +29,6 @@ settings:
 
 .theme-dark,
 .theme-light {
-    --bg-l-modifier: 0%;
-    --bg-l-modifier-inverted: calc(var(--bg-l-modifier) * -1);
-    --bg-s-modifier: calc(var(--bg-l-modifier) * 0.5);
-
-
     /* #region global variables */
     --accent-plus-60: calc(var(--accent-h) + 60);
     --accent-plus-120: calc(var(--accent-h) + 120);
@@ -42,6 +37,13 @@ settings:
     --accent-s-pastel: min(var(--accent-s), 50%);
     /* --accent-s-saturated: max(var(--accent-s), 50%); */
     /* #endregion */
+
+    /* #region background modifiers */
+    --bg-l-modifier: 0%;
+    --bg-l-modifier-inverted: calc(var(--bg-l-modifier) * -1);
+    --bg-s-modifier: calc(var(--bg-l-modifier) * 0.5);
+    /* #endregion */
+
     /* --dropdown-background: var(--interactive-normal);
             --dropdown-background-hover: var(--interactive-hover); */
     /* --background-modifier-box-shadow: none; */
@@ -59,9 +61,7 @@ settings:
 
     /* --embed-block-shadow-hover */
     /* --background-modifier-box-shadow: none; */
-    /* #endreiong */
-
-
+    /* #endregion */
 
     /* #region borders */
     --background-modifier-border: var(--hr-color);
@@ -356,6 +356,8 @@ mark,
 
 /* #endregion */
 
+/* #region workspace tabs */
+
 .workspace-tab-header.is-active:before,
 .workspace-tab-header.is-active:after {
     display: none;
@@ -386,6 +388,40 @@ div.workspace-tab-header-inner-status-container {
     padding: auto;
     margin: auto;
 } */
+
+/* #endregion */
+
+/* #region tooltips */
+.tooltip {
+    /* background-color: var(--background-primary); */
+    background-color: var(--interactive-hover);
+    /* --tooltip-border: hsl(hue(var(--hr-color), saturation(var(--hr-color)), calc(lightness(var(--hr-color)) * -1))); */
+    --tooltip-border: var(--interactive-hover);
+    border-color: var(--tooltip-border);
+    /* border-color: black; */
+    /* border-style: solid; */
+    border-width: var(--size-1-1);
+    box-shadow: none;
+    color: var(--text-muted);
+}
+
+.tooltip .tooltip-arrow,
+.tooltip.mod-right .tooltip-arrow {
+    border-width: 8px;
+}
+
+.tooltip .tooltip-arrow {
+    border-bottom-color: var(--tooltip-border);
+    left: calc(50% - 2px);
+}
+
+.tooltip.mod-right .tooltip-arrow {
+    border-right-color: var(--tooltip-border);
+    top: calc(50% - 8px);
+    left: -8px;
+}
+
+/* #endregion */
 
 /* svg * {
     stroke-linecap: round;
