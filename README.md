@@ -7,10 +7,12 @@ You can choose your accent color in [Obsidian](https://obsidian.md/) under **Set
 
 This theme will change the **background colors** according to your accent color's **hue**, and create **two *new* psuedo accent colors** with their hues **offset** from the original, and calculating their saturation and lightness from the original.
 
+This theme has a few configurable options accessible through the [Style Settings](https://obsidian.md/plugins?id=obsidian-style-settings) plugin.
+
 If you see anything that looks broken and needs fixing, please create an [issue](https://github.com/Erallie/colored-candy/issues) so that I know to fix it.
 
 > ### **PLEASE NOTE:**
-> This theme is *intentionally* low-contrast. However, I will try to keep this theme accessibility-friendly as best I can. If anything is too difficult for you to read, create an [issue](https://github.com/Erallie/colored-candy/issues), and I'll see what I can do.
+> This theme is *intentionally* low-contrast. However, I will try to keep this theme accessibility-friendly as best I can. If anything is too difficult for you to read at default settings, create an [issue](https://github.com/Erallie/colored-candy/issues), and I'll see what I can do.
 > 
 > Additionally, if you cannot stand the lack of contrast, I added a [Style Settings](https://obsidian.md/plugins?id=obsidian-style-settings) option for **Background-to-text contrast**.
 ## Installation
