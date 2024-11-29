@@ -16,7 +16,7 @@ If you see anything that looks broken and needs fixing, please create an [issue]
 > 
 > Additionally, if you cannot stand the lack of contrast, I added a [Style Settings](https://obsidian.md/plugins?id=obsidian-style-settings) option for **Background-to-text contrast**.
 ## Installation
-## Obsidian Marketplace
+### Obsidian Marketplace
 To install this plugin via the Obsidian Marketplace, perform the following steps:
 1. Navigate to **Settings → Appearance → Themes** and select **Manage**.
 2. Search for "Colored Candy" and select the theme by **Erika Gozar**.
