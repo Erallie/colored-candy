@@ -1,0 +1,30 @@
+name: Question
+description: Ask a question about the theme
+title: "[Question] "
+labels: ["question"]
+projects: []
+assignees:
+  - Erallie
+body:
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I have searched existing issues and questions and have not found anything similar to what I'm asking.
+          required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you confused or wondering about?
+      placeholder: "I was wondering how/why..."
+    validations:
+      required: true
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: If applicable, add any screenshots that may help us understand your question.
+    validations:
+      required: false
