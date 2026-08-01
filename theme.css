@@ -454,11 +454,11 @@ div.workspace-tab-header-inner-status-container {
 }
 
 .callout {
-    background-color: rgba(var(--callout-color), 0.125);
+    background-color: color-mix(in srgb, var(--callout-color) 12.5%, transparent);
 }
 
 /* .callout[data-callout="button"] {
-    --callout-color: 143, 69, 255;
+    --callout-color: rgb(143, 69, 255);
     --callout-icon: lucide-shell;
 }
 
@@ -470,6 +470,6 @@ div.workspace-tab-header-inner-status-container {
 
 
 .callout[data-callout="instructions"] {
-    --callout-color: 242, 198, 78;
+    --callout-color: rgb(242, 198, 78);
     --callout-icon: lucide-graduation-cap;
 } */
